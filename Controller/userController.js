@@ -2,6 +2,7 @@ const ErrorHander = require("../utils/errorHander");
 const User = require("../models/userModel");
 const catchAsyncError = require("../middleware/catchAsyncError");
 const bcrypt = require("bcryptjs");
+const dotenv = require("dotenv").config();
 
 const jwt = require('jsonwebtoken');
 var emailRegex =
