@@ -15,9 +15,9 @@ exports.createTicket = catchAsyncError(async (req, res, next) => {
     );
   }
   const tickets = tambola.generateTickets(Number(numofticket));
-  console.log(tickets);
+  // console.log(tickets);
   for (let i = 0; i < numofticket; i++) {
-    console.log(tickets[i]._entries);
+    // console.log(tickets[i]._entries);
     const post = await Ticket.create({
       ticket: tickets[i]._entries,
       user: req.body.user,

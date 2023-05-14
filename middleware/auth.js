@@ -3,7 +3,7 @@ const User = require("../models/userModel");
 const ErrorHander = require("../utils/errorHander");
 const jwt = require("jsonwebtoken")
 exports.isAuthenticated = catchAsyncError(async (req, res, next) => {
-    console.log("isAuthenticated")
+    // console.log("isAuthenticated")
     const bearerHeader = req.headers["authorization"];
   
     if (typeof bearerHeader !== "undefined") {
